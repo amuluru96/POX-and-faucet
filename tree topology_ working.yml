@@ -1,0 +1,130 @@
+vlans:
+    hosts:
+        vid: 100
+dps:
+    br0:
+        dp_id: 0x1
+        hardware: "Open vSwitch"
+        stack:
+            priority: 1
+        interfaces:
+            1:
+                description: "br0 stack link to br1"
+                stack:
+                    dp: br1
+                    port: 5
+            2:
+                description: "br0 stack link to br2"
+                stack:
+                    dp: br2
+                    port: 5
+            3:
+                description: "br0 stack link to br3"
+                stack:
+                    dp: br3
+                    port: 5
+            4:
+                description: "br0 stack link to br4"
+                stack:
+                    dp: br4
+                    port: 5
+    br1:
+        dp_id: 0x2
+        hardware: "Open vSwitch"
+        interfaces:
+            1:
+                name: "host1"
+                description: "host1 network namespace"
+                native_vlan: hosts
+            2:
+                name: "host2"
+                description: "host2 network namespace"
+                native_vlan: hosts
+            3:
+                name: "host3"
+                description: "host3 network namespace"
+                native_vlan: hosts
+            4:
+                name: "host4"
+                description: "host4 network namespace"
+                native_vlan: hosts
+            5:
+                description: "br1 stack link to br0"
+                stack:
+                    dp: br0
+                    port: 1
+    br2:
+        dp_id: 0x3
+        hardware: "Open vSwitch"
+        interfaces:
+            1:
+                name: "host5"
+                description: "host5 network namespace"
+                native_vlan: hosts
+            2:
+                name: "host6"
+                description: "host6 network namespace"
+                native_vlan: hosts
+            3:
+                name: "host7"
+                description: "host7 network namespace"
+                native_vlan: hosts
+            4:
+                name: "host8"
+                description: "host8 network namespace"
+                native_vlan: hosts
+            5:
+                description: "br2 stack link to br0"
+                stack:
+                    dp: br0
+                    port: 2
+    br3:
+        dp_id: 0x4
+        hardware: "Open vSwitch"
+        interfaces:
+            1:
+                name: "host9"
+                description: "host9 network namespace"
+                native_vlan: hosts
+            2:
+                name: "host10"
+                description: "host10 network namespace"
+                native_vlan: hosts
+            3:
+                name: "host11"
+                description: "host11 network namespace"
+                native_vlan: hosts
+            4:
+                name: "host12"
+                description: "host12 network namespace"
+                native_vlan: hosts
+            5:
+                description: "br3 stack link to br0"
+                stack:
+                    dp: br0
+                    port: 3
+    br4:
+        dp_id: 0x5
+        hardware: "Open vSwitch"
+        interfaces:
+            1:
+                name: "host13"
+                description: "host13 network namespace"
+                native_vlan: hosts
+            2:
+                name: "host14"
+                description: "host14 network namespace"
+                native_vlan: hosts
+            3:
+                name: "host15"
+                description: "host15 network namespace"
+                native_vlan: hosts
+            4:
+                name: "host16"
+                description: "host16 network namespace"
+                native_vlan: hosts
+            5:
+                description: "br4 stack link to br0"
+                stack:
+                    dp: br0
+                    port: 4
