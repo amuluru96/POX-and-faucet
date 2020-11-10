@@ -1,0 +1,30 @@
+
+
+Inter Link switches for Linear Network topology
+
+inter_switch_link br0:2 br1:2
+inter_switch_link br1:3 br2:2
+inter_switch_link br2:3 br3:2
+inter_switch_link br3:3 br4:2
+inter_switch_link br4:3 br5:2
+inter_switch_link br5:3 br6:2
+inter_switch_link br6:3 br7:2
+inter_switch_link br7:3 br8:2
+inter_switch_link br8:3 br9:2
+inter_switch_link br9:3 br10:2
+inter_switch_link br10:3 br11:2
+inter_switch_link br11:3 br12:2
+inter_switch_link br12:3 br13:2
+inter_switch_link br13:3 br14:2
+inter_switch_link br14:3 br15:2
+
+Inter Link switches for Tree Network topology
+
+inter_switch_link br0:1 br1:5
+inter_switch_link br0:2 br2:5
+inter_switch_link br0:3 br3:5
+inter_switch_link br0:4 br4:5
+inter_switch_link br1:5 br0:1
+inter_switch_link br2:5 br0:2
+inter_switch_link br3:5 br0:3
+inter_switch_link br4:5 br0:4

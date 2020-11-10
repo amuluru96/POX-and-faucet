@@ -1,0 +1,111 @@
+sudo ovs-vsctl add-br br0 \
+-- set bridge br0 other-config:datapath-id=0000000000000001 \
+-- set bridge br0 other-config:disable-in-band=true \
+-- set bridge br0 fail_mode=secure \
+-- add-port br0 veth-host1 -- set interface veth-host1 ofport_request=1 \
+-- set-controller br0 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br1 \
+-- set bridge br1 other-config:datapath-id=0000000000000002 \
+-- set bridge br1 other-config:disable-in-band=true \
+-- set bridge br1 fail_mode=secure \
+-- add-port br1 veth-host2 -- set interface veth-host2 ofport_request=1 \
+-- set-controller br1 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br2 \
+-- set bridge br2 other-config:datapath-id=0000000000000003 \
+-- set bridge br2 other-config:disable-in-band=true \
+-- set bridge br2 fail_mode=secure \
+-- add-port br2 veth-host3 -- set interface veth-host3 ofport_request=1 \
+-- set-controller br2 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br3 \
+-- set bridge br3 other-config:datapath-id=0000000000000004 \
+-- set bridge br3 other-config:disable-in-band=true \
+-- set bridge br3 fail_mode=secure \
+-- add-port br3 veth-host4 -- set interface veth-host4 ofport_request=1 \
+-- set-controller br3 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br4 \
+-- set bridge br4 other-config:datapath-id=0000000000000005 \
+-- set bridge br4 other-config:disable-in-band=true \
+-- set bridge br4 fail_mode=secure \
+-- add-port br4 veth-host5 -- set interface veth-host5 ofport_request=1 \
+-- set-controller br4 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br5 \
+-- set bridge br5 other-config:datapath-id=0000000000000006 \
+-- set bridge br5 other-config:disable-in-band=true \
+-- set bridge br5 fail_mode=secure \
+-- add-port br5 veth-host6 -- set interface veth-host6 ofport_request=1 \
+-- set-controller br5 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br6 \
+-- set bridge br6 other-config:datapath-id=0000000000000007 \
+-- set bridge br6 other-config:disable-in-band=true \
+-- set bridge br6 fail_mode=secure \
+-- add-port br6 veth-host7 -- set interface veth-host7 ofport_request=1 \
+-- set-controller br6 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br7 \
+-- set bridge br7 other-config:datapath-id=0000000000000008 \
+-- set bridge br7 other-config:disable-in-band=true \
+-- set bridge br7 fail_mode=secure \
+-- add-port br7 veth-host8 -- set interface veth-host8 ofport_request=1 \
+-- set-controller br7 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br8 \
+-- set bridge br8 other-config:datapath-id=0000000000000009 \
+-- set bridge br8 other-config:disable-in-band=true \
+-- set bridge br8 fail_mode=secure \
+-- add-port br8 veth-host9 -- set interface veth-host9 ofport_request=1 \
+-- set-controller br8 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br9 \
+-- set bridge br9 other-config:datapath-id=0000000000000010 \
+-- set bridge br9 other-config:disable-in-band=true \
+-- set bridge br9 fail_mode=secure \
+-- add-port br9 veth-host10 -- set interface veth-host10 ofport_request=1 \
+-- set-controller br9 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br10 \
+-- set bridge br10 other-config:datapath-id=0000000000000011 \
+-- set bridge br10 other-config:disable-in-band=true \
+-- set bridge br10 fail_mode=secure \
+-- add-port br10 veth-host11 -- set interface veth-host11 ofport_request=1 \
+-- set-controller br10 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br11 \
+-- set bridge br11 other-config:datapath-id=0000000000000012 \
+-- set bridge br11 other-config:disable-in-band=true \
+-- set bridge br11 fail_mode=secure \
+-- add-port br11 veth-host12 -- set interface veth-host12 ofport_request=1 \
+-- set-controller br11 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br12 \
+-- set bridge br12 other-config:datapath-id=0000000000000013 \
+-- set bridge br12 other-config:disable-in-band=true \
+-- set bridge br12 fail_mode=secure \
+-- add-port br12 veth-host13 -- set interface veth-host13 ofport_request=1 \
+-- set-controller br12 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br13 \
+-- set bridge br13 other-config:datapath-id=0000000000000014 \
+-- set bridge br13 other-config:disable-in-band=true \
+-- set bridge br13 fail_mode=secure \
+-- add-port br13 veth-host14 -- set interface veth-host14 ofport_request=1 \
+-- set-controller br13 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br14 \
+-- set bridge br14 other-config:datapath-id=0000000000000015 \
+-- set bridge br14 other-config:disable-in-band=true \
+-- set bridge br14 fail_mode=secure \
+-- add-port br14 veth-host15 -- set interface veth-host15 ofport_request=1 \
+-- set-controller br14 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
+
+sudo ovs-vsctl add-br br15 \
+-- set bridge br15 other-config:datapath-id=0000000000000016 \
+-- set bridge br15 other-config:disable-in-band=true \
+-- set bridge br15 fail_mode=secure \
+-- add-port br15 veth-host16 -- set interface veth-host16 ofport_request=1 \
+-- set-controller br15 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654

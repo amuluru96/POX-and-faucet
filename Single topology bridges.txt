@@ -1,0 +1,21 @@
+sudo ovs-vsctl add-br br0 \
+-- set bridge br0 other-config:datapath-id=0000000000000001 \
+-- set bridge br0 other-config:disable-in-band=true \
+-- set bridge br0 fail_mode=secure \
+-- add-port br0 veth-host1 -- set interface veth-host1 ofport_request=1 \
+-- add-port br0 veth-host2 -- set interface veth-host2 ofport_request=2 \
+-- add-port br0 veth-host3 -- set interface veth-host3 ofport_request=3 \
+-- add-port br0 veth-host4 -- set interface veth-host4 ofport_request=4 \
+-- add-port br0 veth-host5 -- set interface veth-host5 ofport_request=5 \
+-- add-port br0 veth-host6 -- set interface veth-host6 ofport_request=6 \
+-- add-port br0 veth-host7 -- set interface veth-host7 ofport_request=7 \
+-- add-port br0 veth-host8 -- set interface veth-host8 ofport_request=8 \
+-- add-port br0 veth-host9 -- set interface veth-host9 ofport_request=9 \
+-- add-port br0 veth-host10 -- set interface veth-host10 ofport_request=10 \
+-- add-port br0 veth-host11 -- set interface veth-host11 ofport_request=11 \
+-- add-port br0 veth-host12 -- set interface veth-host12 ofport_request=12 \
+-- add-port br0 veth-host13 -- set interface veth-host13 ofport_request=13 \
+-- add-port br0 veth-host14 -- set interface veth-host14 ofport_request=14 \
+-- add-port br0 veth-host15 -- set interface veth-host15 ofport_request=15 \
+-- add-port br0 veth-host16 -- set interface veth-host16 ofport_request=16 \
+-- set-controller br0 tcp:127.0.0.1:6653 tcp:127.0.0.1:6654
